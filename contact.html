@@ -1,0 +1,155 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Minh Hoang
+ID: s3975086
+Acknowledgement: 
+LeafGreen logo: Image designed using Canva from the template logo for the LeafGreen bookstore website 
+Images: Amazon (n.d.) Book images [product_img] [small_img], Amazon website, accessed 3 August, 2023. https://www.amazon.com/
+Book description: Amazon(n.d.) product_description [description], Amazon website, accessed 3 August, 2023. https://www.amazon.com/
+Text in About Us, Terms, Privacy Policy, and Copyright page: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 5 August, 2023. https://chat.openai.com  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet/stylesheet_contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="icon" href="AssetPicture/LogoPage.png" type="img">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>LeafGreen</title>
+</head>
+
+
+<body>
+    <header>
+        <!-- Insert Logo -->
+        <div class="logo">
+            <img src="AssetPicture/LogoPage.png" alt="LeafGreenLogo">
+        </div>
+        <!-- Create hamburger menu-->
+        <div class="mobile-nav-icon">☰</div>
+        <!-- Create a navigation bar -->
+        <nav class="navbar">
+            <!-- Create unordered list -->
+            <ul>
+                <!-- Add list items -->
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="Sub-Category-Sport.html">Sport</a></li>
+                <li><a href="Sub-Category-Fiction.html">Fiction</a></li>
+                <li><a href="Sub-Category-Non-Fiction.html">Non-Fiction</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Create a banner -->
+        <div class="banner">
+            <img src="AssetPicture/Banner2.jpg" alt="Store Banner">
+        </div>
+    </header>
+    <!-- Create Page Title -->
+    <div class="title">
+        <h2>Contact Us</h2>
+    </div>
+    <!-- Create a contact form -->
+    <div class="contact">
+        <form>
+            <!-- Name input -->
+            <div class="inputgroup">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <!-- Phone input -->
+            <div class="inputgroup">
+                <input type="text" id="phone" required>
+                <label for="phone">Phone Number</label>
+            </div>
+            <!-- Mail input -->
+            <div class="inputgroup">
+                <input type="text" id="mail" required>
+                <label for="mail">Email</label>
+            </div>
+            <!-- Purpose selection -->
+            <div class="inputgroup">
+                <select name="purpose" id="purpose" required>
+                    <option value="">--Contact Purpose--</option>
+                    <option value="buy">I Want To Buy Books</option>
+                    <option value="sell">I Want To Sell Books</option>
+                </select>
+            </div>
+            <!-- Create a textarea -->
+            <div class="inputgroup">
+                <textarea id="message" rows="5" required></textarea>
+                <label for="message">Your Note</label>
+            </div>
+            <!-- Input type check -->
+            <div class="inputcheck">
+                
+                <div class="checkboxes">
+                    <!-- Contact Preference title -->
+                    <h4>Contact Preference</h4>
+                    <!-- Checkbox mail -->
+                    <label for="mail">By Mail</label> 
+                    <input type="checkbox" id="mail" > 
+                    <!-- Checkbox phone -->               
+                    <label for="phone">By Phone</label>
+                    <input type="checkbox" id="phone" >            
+                </div>
+                <div class="checkboxes">
+                    <!-- Receive Weekly Newsletter title -->
+                    <h4> Receive Weekly Newsletter</h4>
+                    <!-- Yes option  -->
+                    <label for="radio"> Yes </label>
+                    <input type="radio" id="yes" name="news" checked>
+                    <!-- No option -->
+                    <label for="radio"> No </label>
+                    <input type="radio" id="yes" name="news" >         
+                </div>
+                <!-- Button submit -->
+                <button type="submit">SUBMIT</button>
+                <!-- Button reset -->
+                <button type="reset">RESET</button>
+            </div>
+        </form>
+    </div>
+    <!-- Create a class footer -->
+    <footer class="footer">
+        <!-- Create a footer container -->
+        <div class="footercontainer">
+            <!-- Create a footer row -->
+            <div class="footer_row">
+                <!-- Create a footer column -->
+                <div class="footer_col">
+                    <!-- Create Company heading -->
+                    <h4>Company</h4>
+                    <!-- Create unordered list -->
+                    <ul>
+                        <!-- Add list items -->
+                        <li><a href="Policy.html">About Us</a></li>
+                        <li><a href="Policy.html">Privacy Policy</a></li>
+                        <li><a href="Policy.html">Terms</a></li>
+                        <li><a href="Policy.html">Copyright</a></li>
+                    </ul>
+                </div>
+                <!-- Create a footer column -->
+                <div class="footer_col">
+                    <!-- Create Contact US heading -->
+                    <a href="contact.html" target="_blank"><h4>Contact Us</h4></a>
+                    <!-- Create social media navigation -->
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

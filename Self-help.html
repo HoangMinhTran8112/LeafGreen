@@ -1,0 +1,129 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Minh Hoang
+ID: s3975086
+Acknowledgement: 
+LeafGreen logo: Image designed using Canva from the template logo for the LeafGreen bookstore website 
+Images: Amazon (n.d.) Book images [product_img] [small_img], Amazon website, accessed 3 August, 2023. https://www.amazon.com/
+Book description: Amazon(n.d.) product_description [description], Amazon website, accessed 3 August, 2023. https://www.amazon.com/
+Text in About Us, Terms, Privacy Policy, and Copyright page: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 5 August, 2023. https://chat.openai.com  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet/stylesheet_sub.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="icon" href="AssetPicture/LogoPage.png" type="img">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>LeafGreen</title>
+</head>
+
+
+<body>
+    <header>
+        <!-- Insert Logo -->
+        <div class="logo">
+            <img src="AssetPicture/LogoPage.png" alt="LeafGreenLogo">
+        </div>
+        <!-- Create hamburger menu-->
+        <div class="mobile-nav-icon">☰</div>
+        <!-- Create a navigation bar -->
+        <nav class="navbar">
+            <!-- Create unordered list -->
+            <ul>
+                <!-- Add list items -->
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="Sub-Category-Sport.html">Sport</a></li>
+                <li><a href="Sub-Category-Fiction.html">Fiction</a></li>
+                <li><a href="Sub-Category-Non-Fiction.html">Non-Fiction</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Create a banner -->
+        <div class="banner">
+            <img src="AssetPicture/Banner2.jpg" alt="Store Banner">
+        </div>
+    </header>
+    <section class="sub_category">
+        <!-- Subcategory title -->
+        <h2 class="sub_title">Self-help</h2>
+        <div class="category">
+            <div class="books_nominated">
+                <!-- Book image insert -->
+                <a href="Overthinking.html"><img src="AssetPicture/Overthink-1.jpg" alt="Stop Overthinking"></a>
+                <!-- Book title -->
+                <a href="Overthinking.html"><h4>Stop Overthinking</h4></a>
+                <br>
+                <!-- Author  -->
+                <h5>by Nick Trenton </h5>
+                <!-- Book price -->
+                <p>$12.48</p>
+            </div>            
+            <div class="books_nominated">
+                <!-- Book image insert -->
+                <a href="Fine 40.html"><img src="AssetPicture/fine40-1.jpg" alt="How to Be Fine About Turning 40  "></a>
+                <!-- Book title -->
+                <a href="Fine 40.html"><h4>How to Be Fine About<br> Turning 40</h4></a>              
+                <!-- Author  -->
+                <h5>by Rebecca du Pontet</h5> 
+                <!-- Book price -->               
+                <p>$8.99</p>
+            </div>           
+            <div class="books_nominated">
+                <!-- Book image insert -->
+                <a href="/Wyd w Problem.html"><img src="AssetPicture/problem-1.jpg" alt="What Do You Do With a Problem?  "></a>
+                <!-- Book title -->
+                <a href="Wyd w Problem.html"><h4>What Do You Do<br> With a Problem? </h4></a>
+                <!-- Author  -->                
+                <h5>by Kobi Yamada </h5> 
+                <!-- Book price -->              
+                <p>$9.39</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Create a class footer -->
+     <footer class="footer">
+        <!-- Create a footer container -->
+        <div class="footercontainer">
+            <!-- Create a footer row -->
+            <div class="footer_row">
+                <!-- Create a footer column -->
+                <div class="footer_col">
+                    <!-- Create Company heading -->
+                    <h4>Company</h4>
+                    <!-- Create unordered list -->
+                    <ul>
+                        <!-- Add list items -->
+                        <li><a href="Policy.html">About Us</a></li>
+                        <li><a href="Policy.html">Privacy Policy</a></li>
+                        <li><a href="Policy.html">Terms</a></li>
+                        <li><a href="Policy.html">Copyright</a></li>
+                    </ul>
+                </div>
+                <!-- Create a footer column -->
+                <div class="footer_col">
+                    <!-- Create Contact US heading -->
+                    <a href="contact.html" target="_blank"><h4>Contact Us</h4></a>
+                    <!-- Create social media navigation -->
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+/* Set default setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Set Header Width 100% */
+header {
+    width: 100%;
+
+}
+/* Set navigation display style and background color */
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #A0D8B3;
+    position: static;
+    left: 0;
+    z-index: 80;
+}
+
+/* Centering Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+/* Border the image */
+}
+.logo img{
+    border-radius: 180px;
+    margin: 10px;
+}
+/* Remove the list dot */
+header nav ul {
+    list-style: none;
+}
+/* Display list item */
+header nav li {
+    display: inline-block;
+    padding: 30px;
+}
+/* Decorate the anchor list */
+header nav li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(8, 89, 22);
+    display: block;
+    transition: all 0.5s ease;
+}
+/* Transition for the anchor */
+header nav li a:hover {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/* link path spacing */
+.linkpath{
+    padding-top:  30px;
+}
+/* link path text spacing and centering */
+.linkpath h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+/* link path anchor color */
+.linkpath a{
+    text-decoration: none;
+    color:gray;
+}
+/* link path text transition color on hover */
+.linkpath a:hover{
+    color: black;
+}
+/* product display section */
+.product{
+    display: flex;
+    width: 98%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px black;
+}
+/* product image section width */
+.product_img{
+    width: 350px;
+}
+/* product image width */
+.product_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+/* small images of product display */
+.product_img_smallsection{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 10px;
+}
+/* small picture of product width and border */
+.small_img{
+    width: 100px;
+    
+    border: 2px solid black;
+}
+/* small picture of product width and height */
+.small_img img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* small picture of product transition on hover */
+.small_img:hover img{
+    transform: scale(0.9);
+}
+/* information of the product section */
+.right_side_product{
+    padding-left: 150px;
+    padding-top: 30px;
+}
+/* product author text color */
+.product_name h4{
+    padding: 15px;
+    color: gray;
+}
+/* product price spacing */
+.product_name h3{
+    padding: 20px;
+    font-family: 'Borel', cursive;
+}
+/* Change the title font */
+.product_name h1{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* product quantity spacing */
+.quantity{
+    padding-top: 10px;
+    font-size: 20px;  
+}
+/* product quantity selection setting */
+.quantity input{
+    display: block;
+    width: 50%;
+    border: 2px solid black;  
+    padding: 7px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+/* add to cart button setting */
+.cart_btn button{
+    display: block;
+    width: 500px;
+    border: 2px solid black;  
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* add to cart button transition on hover */
+.cart_btn button:hover{
+    background-color: orange;
+
+}
+
+
+
+/* product description spacing */
+.product_description{
+    padding: 10px 30px;
+}
+/* product description bordering */
+.description{
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.description p{
+    font-family: 'Lora', serif;
+}
+
+/* Sizing the banner */
+.banner img{
+    width: 100%;
+    height: 300px;
+}
+
+/* Create footer background color,padding, and line height */
+.footer{
+    background-color:#A0D8B3 ;
+    padding: 10px 0;
+    line-height: 1.3;
+}
+/* Set the width for the container */
+.footercontainer{
+    max-width: 1170px;
+    
+    margin: auto;
+}
+/* Remove the dot listing style */
+.footer_col ul{
+    list-style: none;
+}
+/* Display the footer style */
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Set the width and padding for footer column */
+.footer_col{
+    width: 50%;
+    padding: 0 15px;
+}
+/* Heading 4 of footer decoration */
+.footer_col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col a {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+/* Transition for the heading 4 */
+.footer_col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: black;
+    height: 3px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+
+
+
+.footer_col ul li:not::last-child{
+    margin-bottom: 10px;
+}
+/* Footer text transition */
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: gray;
+    display: block;
+    transition: all 0.5s ease;
+}
+/* Footer text transition when hover */
+.footer_col ul li a:hover{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Footer social media transition */
+.footer_col .socialmedia a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: gray;
+    transition: all 0.5s ease;
+}
+/* Footer social media when hover */
+.footer_col .socialmedia a:hover{
+    color:gray ;
+    background-color: white;
+}
+/* Hamburger menu setting */
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #A0D8B3;
+    display: none;
+}
+
+/* Adjust the social icon to be centered */
+.footer_col .socialmedia i{
+    padding-top: 12px;
+}
+
+
+@media screen and (max-width:767px) {
+    
+    /* Adjust the cart button size */
+    .cart_btn button{
+        width: 110px;
+    }
+    
+     /* Centering content */
+     body{
+        margin: 0 auto;
+    }
+
+   /* Navigation bar setting on small device */
+   .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    height: auto;
+    padding: 5px 20px;
+}
+/* Make the navigation direction to column */
+.navbar ul {
+    flex-direction: column;
+    margin-top: 20px;
+}
+/* Setting the list item in the hamburger menu */
+.navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+/* Cancel the display style */
+.navbar {
+    display: none;
+}
+/* Make the icon display block style */
+.mobile-nav-icon {
+    display: block;
+}
+/* Menu transition when hover */
+.mobile-nav-icon:hover+.navbar {
+    display: block;
+}
+/* Nav bar transition when hover */
+.navbar:hover {
+    display: block;
+}
+    /* change product display style into Block */
+    .product{
+        display: block;
+
+    /* product small images display style */
+    }
+    .product_img_smallsection{
+        display: flex;
+        flex-direction: row;
+    }
+    /* product image width on small screen */
+    .product_img img{
+        width: 280px;
+        padding: 10px;
+    }
+    /* Sizing product container */
+    .product_container{
+        width: 100%;
+    }
+    /* Adjust the box size */
+    .product{
+        width: 310px;
+        padding: 20px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    /* product display style change into Block */
+    .product{
+        display: block;
+
+        
+    }
+    /* product small images display style */
+    .product_img_smallsection{
+        display: flex;
+        flex-direction: row;
+    }
+    /* product image width on medium screen */
+    .product_img{
+        width: 100%;
+    }
+}

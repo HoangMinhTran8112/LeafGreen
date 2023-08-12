@@ -1,0 +1,141 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Minh Hoang
+ID: s3975086
+Acknowledgement: 
+LeafGreen logo: Image designed using Canva from the template logo for the LeafGreen bookstore website 
+Images: Amazon (n.d.) Book images [product_img] [small_img], Amazon website, accessed 3 August, 2023. https://www.amazon.com/
+Book description: Amazon(n.d.) product_description [description], Amazon website, accessed 3 August, 2023. https://www.amazon.com/
+Text in About Us, Terms, Privacy Policy, and Copyright page: OpenAI (2023) ChatGPT (August 3 version) [Large language model], accessed 5 August, 2023. https://chat.openai.com  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet/stylesheet_items.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="icon" href="AssetPicture/LogoPage.png" type="img">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>LeafGreen</title>
+</head>
+
+
+<body>
+    <header>
+        <!-- Insert Logo -->
+        <div class="logo">
+            <img src="AssetPicture/LogoPage.png" alt="LeafGreenLogo">
+        </div>
+        <!-- Create hamburger menu-->
+        <div class="mobile-nav-icon">☰</div>
+        <!-- Create a navigation bar -->
+        <nav class="navbar">
+            <!-- Create unordered list -->
+            <ul>
+                <!-- Add list items -->
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="Sub-Category-Sport.html">Sport</a></li>
+                <li><a href="Sub-Category-Fiction.html">Fiction</a></li>
+                <li><a href="Sub-Category-Non-Fiction.html">Non-Fiction</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Create a banner -->
+        <div class="banner">
+            <img src="AssetPicture/Banner2.jpg" alt="Store Banner">
+        </div>
+    </header>
+
+    <section class="product_container">
+        <!-- Create a link path -->
+        <div class="linkpath">
+            <h2><a href="index.html">HomePage</a> / <a href="Sub-Category-Non-Fiction.html">Non-Fiction</a> / <a href="Self-help.html">Self-help</a> / <a href="#">What Do You Do With a Problem?</a></h2>
+        </div>
+        <!-- Product images insert -->
+        <div class="product">          
+            <div class="product_img">
+                <a href="AssetPicture/problem-1.jpg" target="_blank"><img src="AssetPicture/problem-1.jpg" alt="What Do You Do With a Problem?"></a>
+            </div>        
+            <div class="product_img_smallsection">
+                <div class="small_img">
+                    <a href="AssetPicture/problem-3.jpg" target="_blank"><img src="AssetPicture/problem-3.jpg" alt="What Do You Do With a Problem?"></a>
+                </div>
+                <div class="small_img">
+                    <a href="AssetPicture/problem-2.jpg" target="_blank"><img src="AssetPicture/problem-2.jpg" alt="What Do You Do With a Problem?"></a>
+                </div>
+                <div class="small_img">
+                    <a href="AssetPicture/problem-4.jpg" target="_blank"><img src="AssetPicture/problem-4.jpg" alt="What Do You Do With a Problem?"></a>
+                </div>
+            </div>
+            <!-- Product information -->            
+            <div class="right_side_product">
+                <div class="product_name">
+                    <h1>What Do You Do With a Problem?</h1>
+                    <h4>Author Kobi Yamada</h4>
+                    <h3>Price: $9.39</h3>
+                </div>
+                <!-- Quantity selection -->
+                <div class="quantity">
+                    <h4>Quantity</h4>
+                    <input type="number" min="1" max="10" value="1">
+                </div>
+                <!-- Shop button -->
+                <div class="cart_btn">
+                    <button>Add To Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="product_description">
+        <!-- Product description -->
+        <div class="description">
+            <h1>Description</h1>
+            <p>
+                
+
+                This is the story of a persistent problem and the child who isn't so sure what to make of it. The longer the problem is avoided, the bigger it seems to get. But when the child finally musters up the courage to face it, the problem turns out to be something quite different than it appeared.
+                <br> <br>
+What Do You Do With a Problem? is a story for anyone, at any age, who has ever had a problem that they wished would go away. It's a story to inspire you to look closely at that problem and to find out why it's here. Because you might discover something amazing about your problem... and yourself.</p>
+        </div>
+    </section>
+     <!-- Create a class footer -->
+     <footer class="footer">
+        <!-- Create a footer container -->
+        <div class="footercontainer">
+            <!-- Create a footer row -->
+            <div class="footer_row">
+                <!-- Create a footer column -->
+                <div class="footer_col">
+                    <!-- Create Company heading -->
+                    <h4>Company</h4>
+                    <!-- Create unordered list -->
+                    <ul>
+                        <!-- Add list items -->
+                        <li><a href="Policy.html">About Us</a></li>
+                        <li><a href="Policy.html">Privacy Policy</a></li>
+                        <li><a href="Policy.html">Terms</a></li>
+                        <li><a href="Policy.html">Copyright</a></li>
+                    </ul>
+                </div>
+                <!-- Create a footer column -->
+                <div class="footer_col">
+                    <!-- Create Contact US heading -->
+                    <a href="contact.html" target="_blank"><h4>Contact Us</h4></a>
+                    <!-- Create social media navigation -->
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
